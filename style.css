@@ -4,10 +4,13 @@
   padding: 0;
 }
 .block {
-  width: 1920px;
+  max-width: 1920px;
   height: 1080px;
   margin: 0;
   padding: 0;
+}
+.main {
+  height: 800px;
 }
 
 .header {
@@ -44,13 +47,15 @@ ul {
   margin: 0;
   padding: 0;
     }
-.logo img {
+.logo {
   width: 721px;
   height: 573px;
   object-fit: contain;
   margin-top: 148px;
-  margin-left: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 hr {
   margin: 0;
@@ -95,6 +100,8 @@ h2 {
 }
 .info {
   margin-top: 164px;
+  max-width: 600px;
+  float: left;
 }
 
 .info p {
@@ -163,4 +170,113 @@ h2 {
   height: 100px;
   line-height: 100px;
   margin-top: 175px;
+}
+
+
+@media screen and (max-width: 1605px) {
+       .photo {
+         height: 500px;
+         padding-top: 75px;
+         padding-left: 0px;
+         margin-right: 30px;
+         float: left;
+       }
+       .info {
+         margin-top: 50px;
+         max-width: 600px;
+         float: left;
+       }
+
+       .main {
+         height: 600px;
+       }
+}
+
+@media screen and (max-width: 1420px) {
+  .photo {
+    width: 550.7px;
+    padding-left: 0;
+    float: none;
+    margin: 0 auto;
+    }
+
+
+    .info {
+      text-align: center;
+      float: none;
+      margin: 0 auto;
+    }
+    .info h2 {
+      text-align: center;
+    }
+    .info p {
+      text-align: center;
+    }
+    #sign {
+      text-align: center;
+    }
+
+    .main {
+      height: 1080px;
+    }
+
+}
+
+@media screen and (max-width: 738px) {
+  .logo img{
+    width: 350px;
+    margin: 0 auto;
+    float: none;
+  }
+  .logo {
+    width: 350px;
+    margin: 30% auto;
+    float: none;
+  }
+  .top {
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .menu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .logo {
+    display: none;
+  }
+  .top {
+    height: 500px;
+  }
+  .main {
+    height: 950px;
+  }
+  #mail {
+    font-size: 45px;
+  }
+  #phone {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .photo {
+    width: 100%;
+    height: auto;
+  }
+
+  #mail {
+    font-size: 35px;
+  }
+  #phone {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 354px) {
+  .main {
+    height: 1080px;
+  }
 }
